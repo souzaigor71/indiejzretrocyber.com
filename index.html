@@ -85,6 +85,27 @@
             margin-bottom: 10px;
         }
 
+        .blog-post img {
+            width: 100%;
+            border-radius: 6px;
+            margin: 15px 0;
+            border: 1px solid #0f3d25;
+        }
+
+        .video-box {
+            margin-top: 15px;
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+        }
+
+        .video-box iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+        }
+
         .games {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -124,24 +145,6 @@
             color: #000;
         }
 
-        .canal-box {
-            background-color: #050805;
-            border: 1px solid #0f3d25;
-            border-radius: 10px;
-            padding: 25px;
-            text-align: center;
-        }
-
-        .canal-box p {
-            margin-bottom: 15px;
-            color: #b7ffd8;
-        }
-
-        .canal-btn {
-            text-decoration: none;
-            display: inline-block;
-        }
-
         footer {
             text-align: center;
             padding: 20px;
@@ -172,28 +175,34 @@
     <div class="blog-post">
         <h3>Como criar um jogo retrô do zero</h3>
         <p>Falamos sobre engines, pixel art, trilha sonora chiptune e design clássico inspirado nos anos 90.</p>
+        <img src="images/img1.png" alt="Dev retrô">
     </div>
 
     <div class="blog-post">
         <h3>Dicas para devs indie sobreviverem</h3>
         <p>Organização, marketing, motivação e como lançar seu primeiro jogo sem grandes recursos.</p>
+        <img src="images/img2.png" alt="Dev indie">
     </div>
 
-    <!-- ADIÇÃO DO CANAL DENTRO DO BLOG -->
+    <!-- DEVLOG AUTOMÁTICO -->
     <div class="blog-post">
-        <h3>📺 Conheça nosso canal</h3>
-        <p>
-            Acompanhe nossos <strong>devlogs</strong>, <strong>gameplays</strong> e conteúdos
-            sobre <strong>desenvolvimento de jogos</strong> no nosso canal do YouTube.
-        </p>
+        <h3>📺 Devlog – Vídeo direto do canal</h3>
+        <p>Último devlog publicado no canal, diretamente integrado ao blog.</p>
 
-        <div class="canal-box">
-            <a class="btn canal-btn"
-               href="https://www.youtube.com/@prosacomjackezoe"
-               target="_blank">
-               Visitar o canal Prosa com Jack e Zoe
-            </a>
+        <div class="video-box">
+            <iframe 
+                src="https://www.youtube.com/embed?listType=user_uploads&list=prosacomjackezoe"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
         </div>
+    </div>
+
+    <!-- GALERIA -->
+    <div class="blog-post">
+        <h3>📸 Bastidores do desenvolvimento</h3>
+        <img src="images/img3.png" alt="Bastidores 1">
+        <img src="images/img4.png" alt="Bastidores 2">
     </div>
 </section>
 
@@ -207,28 +216,12 @@
             <div class="price">R$ </div>
             <button class="btn">Comprar</button>
         </div>
-
-        <div class="game-card">
-            <h3>Nome Jogo.</h3>
-            <p>Descrição jogo.</p>
-            <div class="price">R$ </div>
-            <button class="btn">Comprar</button>
-        </div>
-
-        <div class="game-card">
-            <h3>Nome Jogo.</h3>
-            <p>Descrição jogo.</p>
-            <div class="price">R$ </div>
-            <button class="btn">Comprar</button>
-        </div>
     </div>
 </section>
 
 <section id="sobre">
     <h2>👾 Sobre o IndieJZ RetroCyber</h2>
-    <p>Sou um desenvolvedor indie apaixonado por criar experiências únicas em jogos.
-Aqui você encontra todos os meus projetos em desenvolvimento e games finalizados disponíveis para download.
-Cada jogo é feito com dedicação e muito amor pelo que faço!</p>
+    <p>Sou um desenvolvedor indie apaixonado por criar experiências únicas em jogos.</p>
 </section>
 
 <footer>
